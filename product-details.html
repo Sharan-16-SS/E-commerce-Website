@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products - RedStore</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  </style>
+</head>
+
+<body>
+
+<div class="small-container single-product">
+  <div class="row">
+    <div class="col-2">
+      <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
+
+
+      <div class="small-img-row">
+        <div class="small-img-col">
+          <img src="images/gallery-2.jpg" class="small-img">
+        </div>
+        <div class="small-img-col">
+          <img src="images/gallery-3.jpg" class="small-img">
+        </div>
+        <div class="small-img-col">
+          <img src="images/gallery-4.jpg" class="small-img">
+        </div>
+        <div class="small-img-col">
+          <img src="images/gallery-1.jpg" class="small-img">
+        </div>
+      </div>
+      
+
+    </div>
+    <div class="col-2">
+      <p>Home / T-Shirt</p>
+      <h1>Red Printed T-Shirt by HRX</h1>
+      <h4>$50.00</h4>
+      <select>
+        <option>Select Size</option>
+        <option>XXL</option>
+        <option>XL</option>
+        <option>Large</option>
+        <option>Medium</option>
+        <option>Small</option>
+      </select>
+      <input type="number" value="1">
+      <a href="" class="btn">Add to Cart</a>
+      <h3>Product Details <i class="fa fa-indent"></i></h3>
+      <br>
+      <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-Shirt. Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys.</p>
+    </div>
+  </div>
+</div>
+<!----------title---------------->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+<div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-9.jpg">
+            <h4>Black Edition Analog Watch With Date & Time</h4>
+            <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$6500.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4>Black Sports Shoes</h4>
+            <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$4150.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-11.jpg">
+            <h4>Grey Sport Shoes</h4>
+            <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$1180.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-12.jpg">
+            <h4>Black Track Pant</h4>
+            <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$850.00</p>
+        </div>
+    </div>
+
+
+<!------------ footer ---------->
+<div class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and iOS mobile phones.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2025 RedStore. All Rights Reserved.</p>
+    </div>
+</div>
+<script>
+ 
+  var ProductImg = document.getElementById("ProductImg");
+  var SmallImgs = document.getElementsByClassName("small-img");
+
+  for (let i = 0; i < SmallImgs.length; i++) {
+    SmallImgs[i].onclick = function () {
+      ProductImg.src = SmallImgs[i].src;
+    }
+  }
+</script>
+
+</body>
+</html>
